@@ -1,28 +1,28 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  orderCtn: {
+  payCtn: {
     flex: 1,
     backgroundColor: "#fff",
   },
-  orderHeader: {
+  payHeader: {
     height: 100,
     borderBottomWidth: 1,
     justifyContent: "flex-end",
     paddingHorizontal: 16,
     paddingBottom: 8,
   },
-  oderHeaderTitle: {
+  payHeaderTitle: {
     justifyContent: "center",
     alignItems: "center",
     height: 50,
     backgroundColor: "#0000CD",
   },
-  oderBody: {
+  payBody: {
     flex: 1,
     backgroundColor: "#F5FFFA",
   },
-  oderBodyTitle: {},
+  payBodyTitle: {},
   selectFloor: {
     height: 80,
     flexDirection: "row",

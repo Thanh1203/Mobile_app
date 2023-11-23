@@ -7,40 +7,45 @@ import styles from "../../style/homeStyle";
 import OptionHome from "../../components/OptionHome";
 
 const HomeScreen = () => {
-  const titleList =['Gọi món', 'Thanh toán', "Thống kê"]
+  const titleList =['Gọi món', 'Thanh toán', "Doanh thu", "Nhân viên", "Cập nhật Menu", "Thiết lập"]
 
   const navigation = useNavigation();
-
-  const openMenu = () => {
-    navigation.navigate("MenuScreen");
-  };
-
+  //* mở gọi món
   const openOrder = () => {
     navigation.navigate("OrderScreen");
   };
-
+  //* mở thanh toán
   const openPayment = () => {
     navigation.navigate("PaymentScreen");
   };
-
+  //* mở thống kê
   const openStatistical = () => {
 
+  }
+  //* mở cập nhật nhân viên
+  const openUserInfor = () => {
+
+  }
+  //* mở cập nhật menu
+  const openMenuUpdate = () => {
+
+  }
+  //* mở cài đặt
+  const openSetting = () => {
+    navigation.navigate("SettingScreen");
   }
 
   return (
     <React.Fragment>
       <View style={styles.headerCtn}>
         <Text style={[styles.h1, styles.headerTitle]}>Trang chủ</Text>
-        <TouchableOpacity onPress={openMenu}>
-          <FontAwesome name="bars" size={35} color="white" />
-        </TouchableOpacity>
       </View>
       <View style={baseStyle.page}>
         <View style={styles.bodyCtn}>
           <OptionHome
             title={titleList[0]}
             handleOption={openOrder} 
-            icon="restaurant"
+            icon="edit"
           />
           <OptionHome
             title={titleList[1]}
@@ -49,7 +54,21 @@ const HomeScreen = () => {
           />
           <OptionHome title={titleList[2]}
             handleOption={openStatistical}
-            icon="insert-chart-outlined"
+            icon="bar-chart"
+          />
+          <OptionHome
+            title={titleList[3]}
+            handleOption={openUserInfor}
+            icon="user"
+          />
+          <OptionHome
+            title={titleList[4]}
+            handleOption={openMenuUpdate}
+            icon="list-alt" />
+          <OptionHome
+            title={titleList[5]}
+            handleOption={openSetting}
+            icon="gear"
           />
         </View>
       </View>

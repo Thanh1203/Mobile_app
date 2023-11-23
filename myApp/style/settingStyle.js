@@ -1,11 +1,11 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  menuCtn: {
+  settingCtn: {
     flex: 1,
     justifyContent: "space-between",
   },
-  menuHeader: {
+  settingHeader: {
     width: "100%",
     height: 100,
     borderBottomWidth: 1,
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingBottom: 8,
   },
-  menuBottom: {
+  settingBottom: {
     height: 100,
     padding: 10,
     alignItems: "center",

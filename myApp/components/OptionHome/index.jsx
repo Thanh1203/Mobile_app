@@ -1,11 +1,11 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
-import {MaterialIcons} from '@expo/vector-icons'
+import {FontAwesome} from '@expo/vector-icons'
 
 const OptionHome = ({ title, handleOption, icon }) => {
     return (
         <TouchableOpacity onPress={handleOption}>
             <View style={styles.navItem}>
-                <MaterialIcons name={`${icon}`} size={30} color="white" />
+                <FontAwesome name={`${icon}`} size={30} color="white" />
                 <Text style={styles.navItem_text}>{title}</Text>
             </View>
         </TouchableOpacity>
@@ -14,7 +14,7 @@ const OptionHome = ({ title, handleOption, icon }) => {
 
 const styles = StyleSheet.create({
     navItem: {
-        height: 100,
+        height: 120,
         width: 180,
         backgroundColor: "#000",
         display: "flex",

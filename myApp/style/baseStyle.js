@@ -6,9 +6,32 @@ const baseStyle = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  titleScreen: {
+  textBlack000: {
+    color: "#000",
+  },
+  textBlack333: {
+    color: "#333",
+  },
+  textWhite: {
+    color: "#fff",
+  },
+  texth1: {
+    fontSize: 32,
+  },
+  texth2: {
     fontSize: 24,
+  },
+  texth3: {
+    fontSize: 20,
+  },
+  textBase: {
+    fontSize: 16,
+  },
+  textBold: {
     fontWeight: "600",
+  },
+  widthFull: {
+    width: "100%",
   },
 });
 

@@ -1,11 +1,14 @@
 import { StyleSheet, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+//* screen
 import LoginScreen from "./view/LoginView";
 import HomeScreen from "./view/HomeView";
-import MenuScreen from "./view/MenuView";
+import SettingScreen from "./view/SettingView";
 import OrderScreen from "./view/OrderView";
 import PaymentScreen from "./view/PaymentView";
+import DetailOrderScreen from "./view/OrderViewDetail";
+import DetailPaymentScreen from "./view/PaymentViewDetail";
 
 const Stack = createNativeStackNavigator();
 
@@ -28,8 +31,8 @@ export default function App() {
             options={{ title: "", headerShown: false }}
           />
           <Stack.Screen
-            name="MenuScreen"
-            component={MenuScreen}
+            name="SettingScreen"
+            component={SettingScreen}
             options={{
               title: "",
               headerShown: false,
@@ -46,6 +49,22 @@ export default function App() {
           <Stack.Screen
             name="PaymentScreen"
             component={PaymentScreen}
+            options={{
+              title: "",
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="DetailOrderScreen"
+            component={DetailOrderScreen}
+            options={{
+              title: "",
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="DetailPaymentScreen"
+            component={DetailPaymentScreen}
             options={{
               title: "",
               headerShown: false,

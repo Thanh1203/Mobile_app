@@ -1,0 +1,152 @@
+{
+    "maindishes": [
+        {
+            "key": "nnnt",
+            "value": "Nem nướng Nha Trang"
+        },
+        {
+            "key": "nl",
+            "value": "Nem lụi"
+        },
+        {
+            "key": "ncn",
+            "value": "Nem chua nướng"
+        },
+        {
+            "key": "ncr",
+            "value": "Nem chua rán"
+        },
+        {
+            "key": "cgn1",
+            "value": "Chân gà nướng"
+        },
+        {
+            "key": "cgn2",
+            "value": "Cánh gà nướng"
+        },
+        {
+            "key": "cgst",
+            "value": "Chân gà sả tắc"
+        },
+        {
+            "key": "pc",
+            "value": "Phở cuốn"
+        },
+        {
+            "key": "kp",
+            "value": "Kimbap"
+        },
+        {
+            "key": "tbk",
+            "value": "Tokbokki"
+        },
+        {
+            "key": "bdx",
+            "value": "Bánh đồng xu"
+        },
+        {
+            "key": "btn",
+            "value": "Bánh tráng nướng"
+        },
+        {
+            "key": "btt",
+            "value": "Bánh tráng trộn"
+        },
+        {
+            "key": "btc",
+            "value": "Bánh tráng cuộn"
+        },
+        {
+            "key": "mc",
+            "value": "Mỳ cay"
+        }
+    ],
+    "extradish": [
+        {
+            "key": "kc",
+            "value": "Kim chi"
+        },
+        {
+            "key": "nn",
+            "value": "Nem nướng"
+        },
+        {
+            "key": "ram",
+            "value": "Ram"
+        },
+        {
+            "key": "pho",
+            "value": "Phở"
+        },
+        {
+            "key": "nl",
+            "value": "Nem lụi"
+        },
+        {
+            "key": "tbk",
+            "value": "Tokbokki"
+        },
+        {
+            "key": "cc",
+            "value": "Chả cá"
+        },
+        {
+            "key": "xx",
+            "value": "Xúc xích"
+        },
+        {
+            "key": "tb",
+            "value": "Thịt bò"
+        },
+        {
+            "key": "tom",
+            "value": "Tôm"
+        },
+        {
+            "key": "ngao",
+            "value": "Ngao"
+        },
+        {
+            "key": "muc",
+            "value": "Mực"
+        },
+        {
+            "key": "tm",
+            "value": "Thêm mỳ"
+        }
+    ],
+    "drinks": [
+        {
+            "key": "cc",
+            "value": "Coca"
+        },
+        {
+            "key": "7up",
+            "value": "7 Up"
+        },
+        {
+            "key": "ns",
+            "value": "Nước suối"
+        },
+        {
+            "key": "td",
+            "value": "Trà đá"
+        },
+        {
+            "key": "tsd",
+            "value": "Trà sâm dứa"
+        },
+        {
+            "key": "nc",
+            "value": "Nước cam"
+        },
+        {
+            "key": "httcdd",
+            "value": "Hồng trà trân châu đường đen"
+        },
+        {
+            "key": "tbd",
+            "value": "Trà bí đao"
+        }
+    ]
+}

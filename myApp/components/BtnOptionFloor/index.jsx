@@ -1,10 +1,13 @@
-import { StyleSheet, Text, View } from "react-native"
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
+import baseStyle from "../../style/baseStyle"
 
-const BtnOptionFloor = ({floorIndex}) => {
+const BtnOptionFloor = ({floorIndex, handleOption}) => {
     return (
-        <View style={styles.floorItem}>
-            <Text>{floorIndex}</Text>
-        </View>
+        <TouchableOpacity onPress={handleOption}>
+            <View style={styles.floorItem}>
+                <Text style={[baseStyle.textWhite, styles.floorTitle]}>{floorIndex}</Text>
+            </View>
+        </TouchableOpacity>
     )
 }
 
@@ -12,11 +15,18 @@ const styles = StyleSheet.create({
     floorItem: {
         height: 50,
         width: 100,
-        backgroundColor: "aqua",
+        backgroundColor: "#fff",
         marginHorizontal: 15,  
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        borderRadius: 10
+    },
+    floorTitle: {
+        fontSize: 16,
+        letterSpacing: 3,
+        color: "#333"
     }
+    
 })
 
 export default BtnOptionFloor
