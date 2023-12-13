@@ -19,7 +19,8 @@ const styles = StyleSheet.create({
         marginHorizontal: 15,  
         alignItems: "center",
         justifyContent: "center",
-        borderRadius: 10
+        borderRadius: 10,
+        borderWidth: 1,
     },
     floorTitle: {
         fontSize: 16,

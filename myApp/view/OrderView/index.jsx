@@ -30,7 +30,7 @@ const OrderScreen = () => {
                 <BtnPrePage />
             </View>
             <View style={styles.oderHeaderTitle}>
-                <Text style={[baseStyle.texth1, baseStyle.textBold, baseStyle.textWhite]}>Gọi món</Text>
+                <Text style={[baseStyle.texth1, baseStyle.textWeight600, baseStyle.textBlack000]}>Gọi món</Text>
             </View>
             <View style={styles.oderBody}>
                 <View style={styles.selectFloor}>
@@ -39,7 +39,7 @@ const OrderScreen = () => {
                     </ScrollView>
                 </View>
                 <View style={styles.selectTable}>
-                    <Text style={[baseStyle.texth2, baseStyle.textBold]}>
+                    <Text style={[baseStyle.texth2, baseStyle.textWeight600]}>
                         {currentFloor}
                     </Text>
                     <ListTable numberFloor={currentFloor} status={1}/>

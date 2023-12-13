@@ -3,7 +3,7 @@ import styles from "../../style/listTableStyle"
 import TableOptions from "../ListTableSelect/index"
 import dataListTable from "../../contantData/dataTable"
 import { useNavigation } from "@react-navigation/native"
-import React, { useState } from "react";
+import React from "react";
 
 const mapFloor = (numberFloor) => {
   const match = numberFloor.match(/\d+$/); // Lấy tất cả các số ở cuối chuỗi

@@ -43,11 +43,11 @@ const DetailPaymentScreen = ({route}) => {
             </View>
             <View style={styles.bodyPayDetail}>
                 <View style={styles.titlePayDetail}>
-                    <Text style={[baseStyle.texth2, baseStyle.textBold, styles.titleDataTable]}>Bàn: {dataTable.id}</Text>
-                    <Text style={[baseStyle.texth2, baseStyle.textBold, styles.titleDataTable]}>Tầng: {dataTable.floor}</Text>
+                    <Text style={[baseStyle.texth2, baseStyle.textWeight600, styles.titleDataTable]}>Bàn: {dataTable.id}</Text>
+                    <Text style={[baseStyle.texth2, baseStyle.textWeight600, styles.titleDataTable]}>Tầng: {dataTable.floor}</Text>
                 </View>
                 <View style={styles.contentPayDetail}>
-                    <Text style={[baseStyle.textBold, baseStyle.texth3, baseStyle.textWhite, styles.contentPayDetailTitle]}>Danh sách món ăn</Text>
+                    <Text style={[baseStyle.textWeight600, baseStyle.texth3, baseStyle.textWhite, styles.contentPayDetailTitle]}>Danh sách món ăn</Text>
                     <View style={[styles.contentPayment]}>
                         <View style={[styles.contentPaymentName]}>
                             <Text style={[styles.paymentText]}>Nem nướng nha trang</Text>
@@ -77,7 +77,7 @@ const DetailPaymentScreen = ({route}) => {
                 </View>
                 <View style={styles.footerPayDetail}>
                     <TouchableOpacity style={styles.btnPayment} onPress={handlePay}>
-                        <Text style={[baseStyle.textBold, baseStyle.texth2, baseStyle.textWhite,
+                        <Text style={[baseStyle.textWeight600, baseStyle.texth2, baseStyle.textWhite,
                         styles.btnPaymentText]}>Thanh Toán</Text>
                     </TouchableOpacity>
                 </View>

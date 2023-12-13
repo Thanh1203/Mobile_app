@@ -1,11 +1,8 @@
 import React from 'react';
-import dataFoods from '../../contantData/dataFoods.json'
-import baseStyle from '../../style/baseStyle';
 import { StyleSheet, Text, View } from 'react-native';
 import MaindishesItem from './MaindishesItem';
 
 const ListSelectFoods = ({ arr, checking}) => {
-
     if (!arr) {
         return null
     }

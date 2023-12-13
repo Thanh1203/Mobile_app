@@ -9,6 +9,8 @@ import OrderScreen from "./view/OrderView";
 import PaymentScreen from "./view/PaymentView";
 import DetailOrderScreen from "./view/OrderViewDetail";
 import DetailPaymentScreen from "./view/PaymentViewDetail";
+import UpdateMenuScreen from "./view/UpdateMenuView";
+import PersonnelScreen from "./view/Personnel";
 
 const Stack = createNativeStackNavigator();
 
@@ -65,6 +67,22 @@ export default function App() {
           <Stack.Screen
             name="DetailPaymentScreen"
             component={DetailPaymentScreen}
+            options={{
+              title: "",
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="UpdateMenuScreen"
+            component={UpdateMenuScreen}
+            options={{
+              title: "",
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="PersonnelScreen"
+            component={PersonnelScreen}
             options={{
               title: "",
               headerShown: false,

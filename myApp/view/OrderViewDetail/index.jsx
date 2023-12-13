@@ -1,4 +1,4 @@
-import { Button, ScrollView, Text, TouchableOpacity, View } from "react-native"
+import { ScrollView, Text, TouchableOpacity, View } from "react-native"
 import styles from "../../style/detailOrderStyle"
 import { useNavigation } from "@react-navigation/native";
 import FontAwesome from "@expo/vector-icons/FontAwesome5";
@@ -50,14 +50,14 @@ const DetailOrderScreen = ({ route }) => {
             </View>
             <View style={styles.bodyOrderDetail}>
                 <View style={styles.titleOrderDetail}>
-                    <Text style={[baseStyle.texth2, baseStyle.textBold, styles.titleDataTable]}>Bàn: {dataTable.id}</Text>
-                    <Text style={[baseStyle.texth2, baseStyle.textBold, styles.titleDataTable]}>Tầng: {dataTable.floor}</Text>
+                    <Text style={[baseStyle.texth2, baseStyle.textWeight600, styles.titleDataTable]}>Bàn: {dataTable.id}</Text>
+                    <Text style={[baseStyle.texth2, baseStyle.textWeight600, styles.titleDataTable]}>Tầng: {dataTable.floor}</Text>
                 </View>
                 <View style={styles.contentOrderDetail}>
                     <ScrollView style={[styles.menuOrder]}>
                         <View style={[styles.menuOrderContent]}>
                             <View style={[styles.menuOrderTitle]}>
-                                <Text style={[baseStyle.texth3, baseStyle.textBold, baseStyle.textWhite]}>
+                                <Text style={[baseStyle.texth3, baseStyle.textWeight600, baseStyle.textWhite]}>
                                     Món chính
                                 </Text>
                                 <AntDesign name="plussquareo" size={24} color="#fff"/>
@@ -66,7 +66,7 @@ const DetailOrderScreen = ({ route }) => {
                         </View>
                         <View style={[styles.menuOrderContent]}>
                             <View style={[styles.menuOrderTitle]}>
-                                <Text style={[baseStyle.texth3, baseStyle.textBold, baseStyle.textWhite]}>
+                                <Text style={[baseStyle.texth3, baseStyle.textWeight600, baseStyle.textWhite]}>
                                     Món ăn thêm
                                 </Text>
                                 <AntDesign name="plussquareo" size={24} color="#fff"/>
@@ -76,7 +76,7 @@ const DetailOrderScreen = ({ route }) => {
                         </View>
                         <View style={[styles.menuOrderContent]}>
                             <View style={[styles.menuOrderTitle]}>
-                                <Text style={[baseStyle.texth3, baseStyle.textBold, baseStyle.textWhite]}>
+                                <Text style={[baseStyle.texth3, baseStyle.textWeight600, baseStyle.textWhite]}>
                                     Đồ uống
                                 </Text>
                                 <AntDesign name="plussquareo" size={24} color="#fff"/>
@@ -88,12 +88,12 @@ const DetailOrderScreen = ({ route }) => {
                 <View style={styles.footerOrderDetail}>
                     <TouchableOpacity style={styles.btnOrderDetail}>
                         <View style={styles.btnOrderDetail_content}>
-                            <Text  style={[baseStyle.textWhite, baseStyle.textBold, baseStyle.texth3]}>Phiếu gọi món</Text>
+                            <Text  style={[baseStyle.textWhite, baseStyle.textWeight600, baseStyle.texth3]}>Phiếu gọi món</Text>
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity  style={styles.btnOrderDetail} onPress={handleOrder}>
                         <View style={styles.btnOrderDetail_content}>
-                            <Text style={[baseStyle.textWhite, baseStyle.textBold, baseStyle.texth3]}>Gọi món</Text>
+                            <Text style={[baseStyle.textWhite, baseStyle.textWeight600, baseStyle.texth3]}>Gọi món</Text>
                         </View>
                     </TouchableOpacity>
                 </View>

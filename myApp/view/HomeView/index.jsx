@@ -24,11 +24,11 @@ const HomeScreen = () => {
   }
   //* mở cập nhật nhân viên
   const openUserInfor = () => {
-
+    navigation.navigate("PersonnelScreen");
   }
   //* mở cập nhật menu
   const openMenuUpdate = () => {
-
+    navigation.navigate("UpdateMenuScreen")
   }
   //* mở cài đặt
   const openSetting = () => {

@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
   },
   orderHeader: {
     height: 100,
-    borderBottomWidth: 1,
     justifyContent: "flex-end",
     paddingHorizontal: 16,
     paddingBottom: 8,
@@ -16,18 +15,19 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     height: 50,
-    backgroundColor: "#0000CD",
+    backgroundColor: "#F5F7FE",
   },
   oderBody: {
     flex: 1,
-    backgroundColor: "#F5FFFA",
+    backgroundColor: "#F5F7FE",
   },
-  oderBodyTitle: {},
   selectFloor: {
     height: 80,
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#B0C4DE",
+    backgroundColor: "#fff",
+    margin: 10,
+    borderRadius: 10,
   },
   selectTable: {
     flex: 1,

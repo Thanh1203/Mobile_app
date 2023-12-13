@@ -27,8 +27,11 @@ const baseStyle = StyleSheet.create({
   textBase: {
     fontSize: 16,
   },
-  textBold: {
+  textWeight600: {
     fontWeight: "600",
+  },
+  textWeight400: {
+    fontWeight: "400"
   },
   widthFull: {
     width: "100%",

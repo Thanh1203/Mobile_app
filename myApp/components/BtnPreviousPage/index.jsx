@@ -2,8 +2,6 @@ import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import FontAwesome from "@expo/vector-icons/FontAwesome5";
 import { useNavigation } from "@react-navigation/native";
 
-
-
 const BtnPrePage = () => {
     const navigation = useNavigation();
     const handleBackPage = () => {

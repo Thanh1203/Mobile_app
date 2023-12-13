@@ -31,7 +31,7 @@ const PaymentScreen = () => {
                 <BtnPrePage/>
             </View>
             <View style={styles.payHeaderTitle}>
-                <Text style={[baseStyle.texth1, baseStyle.textBold, baseStyle.textWhite]}>Thanh toán</Text>
+                <Text style={[baseStyle.texth1, baseStyle.textWeight600, baseStyle.textBlack000]}>Thanh toán</Text>
             </View>
             <View style={styles.payBody}>
                 <View style={styles.selectFloor}>
@@ -40,7 +40,7 @@ const PaymentScreen = () => {
                     </ScrollView>
                 </View>
                 <View style={styles.selectTable}>
-                    <Text style={[baseStyle.texth2, baseStyle.textBold]}>
+                    <Text style={[baseStyle.texth2, baseStyle.textWeight600]}>
                         {currentFloor}
                     </Text>
                     <ListTable numberFloor={currentFloor} status={2}/>

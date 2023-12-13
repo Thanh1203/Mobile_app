@@ -7,11 +7,11 @@ const TableOptions = ({ tableIndex, peopleCount, handleOption }) => {
             <TouchableOpacity onPress={handleOption}>
                 <View>
                     <View style={[styles.groupContent, styles.grContentTop]}>
-                        <Text style={[baseStyle.texth2, baseStyle.textBold, styles.numberPeople]}>{peopleCount}</Text>
+                        <Text style={[baseStyle.texth2, baseStyle.textWeight600, styles.numberPeople]}>{peopleCount}</Text>
                         <FontAwesome5 name="users" size={32} color="black" />
                     </View>
                     <View style={[styles.groupContent, styles.grContentBottom]}>
-                        <Text style={[baseStyle.texth2, baseStyle.textBold]}>Bàn: {tableIndex}</Text>
+                        <Text style={[baseStyle.texth2, baseStyle.textWeight600]}>Bàn: {tableIndex}</Text>
                     </View>
 
                 </View>
@@ -29,8 +29,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         overflow: "hidden",
-        borderWidth: 1,
-        margin: 15
+        margin: 15,
     },
     groupContent: {
         width: "100%",
