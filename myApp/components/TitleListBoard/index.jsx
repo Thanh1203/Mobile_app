@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native"
 import { FontAwesome5 } from "@expo/vector-icons";
 import baseStyle from "../../style/baseStyle";
 
-const TitleListTable = ({ title , handleOpen, condition}) => {
+const TitleListBoard = ({ title , handleOpen, condition}) => {
     return (
     <TouchableOpacity onPress={handleOpen} style={[styles.btn]}>
         <Text style={[baseStyle.texth3, baseStyle.textWeight600, baseStyle.textBlack333]}>
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 });
-export default TitleListTable
+export default TitleListBoard

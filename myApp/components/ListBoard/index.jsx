@@ -1,45 +1,42 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import baseStyle from "../../style/baseStyle";
 import { FontAwesome5 } from "@expo/vector-icons";
-import baseStyle from "../../../style/baseStyle";
-const deleteItem = () => { 
-  alert('hi')
-}
 
-const RenderList = ({ data }) => {
+const RenderBoard = ({ data, handleOption }) => {
   if (!data) {
     return null;
   }
-  let result = []
-  data.forEach(item => {
+  let result = [];
+  data.forEach((ele) => {
     result.push(
-      <View key={item.key} style={[styles.itemList]}>
-        <Text style={[baseStyle.textBlack333, styles.itemName]}>{item.value}</Text>
-        <TouchableOpacity onPress={deleteItem}>
+      <View key={ele.key} style={[styles.item]}>
+        <Text style={[baseStyle.textBlack333, styles.name]}>{ele.value}</Text>
+        <TouchableOpacity onPress={handleOption}>
           <FontAwesome5 name="trash-alt" size={24} color="red" />
         </TouchableOpacity>
       </View>
     );
   });
-  return result
-}
+  return result;
+};
 
-const FoodList = ({ data, isOpen }) => {
+const BoardList = ({ data, isOpen, handleOption }) => {
   return (
-    <View style={[styles.foodList, !isOpen && styles.closeList]}>
-      <RenderList data={data} />
+    <View style={[styles.ctn, !isOpen && styles.closeBoard]}>
+      <RenderBoard data={data} handleOption={handleOption} />
     </View>
-  ); 
+  );
 };
 
 const styles = StyleSheet.create({
-  foodList: {
+  ctn: {
     marginBottom: 20,
     paddingHorizontal: 24,
     paddingBottom: 12,
     borderWidth: 1,
     borderColor: "#828282",
   },
-  itemList: {
+  item: {
     height: 50,
     flexDirection: "row",
     justifyContent: "space-between",
@@ -47,11 +44,11 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderColor: "#E8E8E8",
   },
-  itemName: {
+  name: {
     fontSize: 16,
     fontWeight: 500,
   },
-  closeList: {
+  closeBoard: {
     height: 0,
     overflow: "hidden",
     borderWidth: 0,
@@ -59,4 +56,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default FoodList;
+export default BoardList;

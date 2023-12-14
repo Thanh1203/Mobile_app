@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
   },
   menuHeaderText: {
     marginBottom: 20,
-    width: "100%",
   },
   foodListCtn: {
     height: 50,

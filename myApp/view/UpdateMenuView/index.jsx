@@ -2,14 +2,18 @@ import { ScrollView, Text, View } from "react-native";
 import styles from "../../style/menuStyle";
 import BtnPrePage from "../../components/BtnPreviousPage";
 import baseStyle from "../../style/baseStyle";
-import FoodList from "./components/foodList";
 import dataFoods from "../../contantData/dataFoods.json";
 import { useState } from "react";
 import BtnAddNew from "../../components/BtnAdd";
-import TitleListTable from "../../components/TitleListTable";
+import TitleListBoard from "../../components/TitleListBoard";
+import BoardList from "../../components/ListBoard";
 
 const addNew = () => {
-  alert(1)
+  alert(1);
+}
+
+const deleteItem = () => {
+  alert(2); 
 }
 
 const UpdateMenuScreen = () => {
@@ -24,7 +28,7 @@ const UpdateMenuScreen = () => {
   const openlist = (value) => {
     if (value === 0) setIsOpenListMaindishes(!isOpenListMaindishes);
     if (value === 1) setIsOpenListExtradishes(!isOpenListExtradishes);
-    if (value == 2) setIsOpenListDrinks(!isOpenListDrinks);
+    if (value === 2) setIsOpenListDrinks(!isOpenListDrinks);
   };
 
   return (
@@ -33,41 +37,20 @@ const UpdateMenuScreen = () => {
         <BtnPrePage />
       </View>
       <View style={[styles.menuBody]}>
-        <Text
-          style={[
-            baseStyle.texth2,
-            baseStyle.textBlack000,
-            baseStyle.textWeight600,
-            styles.menuHeaderText,
-          ]}
-        >
-          Danh sách món ăn
-        </Text>
+        <Text style={[baseStyle.texth1, baseStyle.textBlack000, baseStyle.textWeight600, styles.menuHeaderText,]}>Danh sách món ăn</Text>
         <ScrollView showsVerticalScrollIndicator={false}>
           <View style={[styles.foodListCtn]}>
-            <TitleListTable
-              title={"Món chính"}
-              condition={isOpenListDrinks}
-              handleOpen={() => openlist(0)}
-            />
+            <TitleListBoard title={"Món chính"} condition={isOpenListMaindishes} handleOpen={() => openlist(0)}/>
           </View>
-          <FoodList data={maindishes} isOpen={isOpenListMaindishes} />
+          <BoardList data={maindishes} isOpen={isOpenListMaindishes} handleOption={() => deleteItem()}/>
           <View style={[styles.foodListCtn]}>
-            <TitleListTable
-              title={"Món phụ"}
-              condition={isOpenListDrinks}
-              handleOpen={() => openlist(1)}
-            />
+            <TitleListBoard title={"Món phụ"} condition={isOpenListExtradishes} handleOpen={() => openlist(1)}/>
           </View>
-          <FoodList data={extradishes} isOpen={isOpenListExtradishes} />
+          <BoardList data={extradishes} isOpen={isOpenListExtradishes} handleOption={() => deleteItem()}/>
           <View style={[styles.foodListCtn]}>
-            <TitleListTable
-              title={"Đồ uống"}
-              condition={isOpenListDrinks}
-              handleOpen={() => openlist(2)}
-            />
+            <TitleListBoard title={"Đồ uống"} condition={isOpenListDrinks} handleOpen={() => openlist(2)}/>
           </View>
-          <FoodList data={drinks} isOpen={isOpenListDrinks} />
+          <BoardList data={drinks} isOpen={isOpenListDrinks} handleOption={() => deleteItem()}/>
         </ScrollView>
       </View>
       <View style={[styles.menuFooter]}>

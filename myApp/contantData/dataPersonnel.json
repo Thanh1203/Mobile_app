@@ -1,0 +1,72 @@
+{
+    "Cashier": [
+        {
+            "key": 1,
+            "value": "Nguyễn Thị A"
+        },
+        {
+            "key": 2,
+            "value": "Nguyễn Văn B"
+        }
+    ],
+    "servingStaff": [
+        {
+            "key": 1,
+            "value": "Trần Thị C"
+        },
+        {
+            "key": 2,
+            "value": "Trần Văn D"
+        },
+        {
+            "key": 3,
+            "value": "Trần Thị E"
+        },
+        {
+            "key": 4,
+            "value": "Trần Văn F"
+        },
+        {
+            "key": 5,
+            "value": "Trần Văn G"
+        }
+    ],
+    "kitchenStaff": [
+        {
+            "key": 1,
+            "value": "Vũ Thị H"
+        },
+        {
+            "key": 2,
+            "value": "Vũ Văn K"
+        },
+        {
+            "key": 3,
+            "value": "Vũ Văn M"
+        },
+        {
+            "key": 4,
+            "value": "Vũ Thị N"
+        }
+    ],
+    "cleaningStaff" : [
+        {
+            "key": 1,
+            "value": "Nguyễn Thị O"
+        },
+        {
+            "key": 2,
+            "value": "Nguyễn Thị P"
+        }
+    ],
+    "Guard": [
+        {
+            "key": 1,
+            "value": "Phạm Văn P"
+        },
+        {
+            "key": 2,
+            "value": "Phạm Văn Q"
+        }
+    ]
+}

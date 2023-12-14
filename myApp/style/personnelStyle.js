@@ -22,6 +22,26 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
     alignItems: "center",
   },
+  personnelTitle: {
+    marginBottom: 20
+  },
+  personnelListCtn: {
+    height: 50,
+    width: "100%",
+    paddingHorizontal: 24,
+    flexDirection: "row",
+    backgroundColor: "#F5F5F5",
+    borderRadius: 5,
+    borderWidth: 1,
+    borderColor: "#828282",
+  },
+  personnelFooter: {
+    height: 50,
+    backgroundColor: "#0066FF",
+    margin: 10,
+    padding: 5,
+    borderRadius: 4,
+  },
 });
 
 export default styles;

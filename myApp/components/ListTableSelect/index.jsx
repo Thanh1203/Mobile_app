@@ -1,6 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
 import { FontAwesome5 } from '@expo/vector-icons'; 
 import baseStyle from "../../style/baseStyle";
+
 const TableOptions = ({ tableIndex, peopleCount, handleOption }) => {
     return (
         <View style={styles.optionCtn}>
