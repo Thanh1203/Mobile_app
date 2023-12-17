@@ -1,0 +1,154 @@
+{
+    "dataFakes": [
+        {
+            "data": [
+                {
+                    "name": "Nem nướng nha trang",
+                    "count": 1,
+                    "price": 45
+                },
+                {
+                    "name": "Nem lụi",
+                    "count": 6,
+                    "price": 42
+                },
+                {
+                    "name": "Bánh đồng xu",
+                    "count": 1,
+                    "price": 35
+                },
+                {
+                    "name": "Coca",
+                    "count": 1,
+                    "price": 15
+                },
+                {
+                    "name": "7 Up",
+                    "count": 1,
+                    "price": 15
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "name": "Mỳ cay",
+                    "count": 1,
+                    "price": 50
+                },
+                {
+                    "name": "Xúc xích",
+                    "count": 2,
+                    "price": 20
+                },
+                {
+                    "name": "Nem chua rán",
+                    "count": 6,
+                    "price": 24
+                },
+                {
+                    "name": "Hồng trà trân châu đường đen",
+                    "count": 2,
+                    "price": 70
+                },
+                {
+                    "name": "Kimbap",
+                    "count": 1,
+                    "price": 35
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "name": "Bánh tráng nướng",
+                    "count": 1,
+                    "price": 20
+                },
+                {
+                    "name": "Bánh tráng trộn",
+                    "count": 1,
+                    "price": 20
+                },
+                {
+                    "name": "Bánh tráng cuộn",
+                    "count": 1,
+                    "price": 20
+                },
+                {
+                    "name": "Nem chua nướng",
+                    "count": 4,
+                    "price": 20
+                },
+                {
+                    "name": "7 Up",
+                    "count": 2,
+                    "price": 30
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "name": "Phở cuốn",
+                    "count": 1,
+                    "price": 35
+                },
+                {
+                    "name": "Nem chua rán",
+                    "count": 4,
+                    "price": 20
+                },
+                {
+                    "name": "Bánh tráng cuộn",
+                    "count": 1,
+                    "price": 20
+                },
+                {
+                    "name": "Chân gà sả tắc",
+                    "count": 1,
+                    "price": 45
+                },
+                {
+                    "name": "Trà đá",
+                    "count": 2,
+                    "price": 6
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "name": "Mỳ cay",
+                    "count": 1,
+                    "price": 50
+                },
+                {
+                    "name": "Kim chi",
+                    "count": 1,
+                    "price": 15
+                },
+                {
+                    "name": "Chả cá",
+                    "count": 1,
+                    "price": 20
+                },
+                {
+                    "name": "Thịt bò",
+                    "count": 1,
+                    "price": 20
+                },
+                {
+                    "name": "Thêm mỳ",
+                    "count": 1,
+                    "price": 5
+                },
+                {
+                    "name": "Hồng trà trân châu đường đen",
+                    "count": 1,
+                    "price": 35
+                }
+            ]
+        }
+    ]
+}
