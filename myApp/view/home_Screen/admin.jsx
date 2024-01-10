@@ -29,7 +29,7 @@ const HomeScreenAdmin = () => {
 
     //* mở cập nhật menu
     const openMenuUpdate = () => {
-        navigation.navigate("UpdateMenuScreen")
+        navigation.navigate("UpdateMenuScreen");
     }
 
     //* mở thống kê
@@ -39,7 +39,11 @@ const HomeScreenAdmin = () => {
 
     // mở danh sách bàn
     const openListTable = () => {
-      Alert.alert("Thông báo", "Chức năng đang trong giai đoạn phát triển");
+        navigation.navigate("TableScreen");
+    }
+
+    const openListFloors = () => {
+        navigation.navigate("FloorsScreen");
     }
 
     return (
@@ -60,14 +64,17 @@ const HomeScreenAdmin = () => {
                         <Text style={styles.bodyItem_title}>- Quản lý nhà hàng -</Text>
                         <View style={styles.bodyItem_options}>
                             <OptionHome title={"Nhân viên"} handleOption={openStaff} icon="user"/>
-                            <OptionHome title={"Menu"} handleOption={openMenuUpdate} icon="list-alt"/>
-                            <OptionHome title={"Danh sách bàn"} handleOption={openListTable} icon="th-list"/>
+                            <OptionHome title={"Danh sách món ăn"} handleOption={openMenuUpdate} icon="list-alt"/>
+                            <OptionHome title={"Danh sách bàn ăn"} handleOption={openListTable} icon="th-list" />
+                            <OptionHome title={"Danh sách tầng"} handleOption={openListFloors} icon="th-list" />
                         </View>
                     </View>
                     <View style={styles.bodyItem}>
                         <Text style={styles.bodyItem_title}>- Báo cáo thống kê -</Text>
                         <View style={styles.bodyItem_options}>
-                            <OptionHome title={"Thống kê"} handleOption={openStatistical} icon="bar-chart"/>
+                            <OptionHome title={"Thống kê doanh thu"} handleOption={openStatistical} icon="bar-chart" />
+                            <OptionHome title={"Thống kê hóa đơn"} handleOption={openStatistical} icon="bar-chart" />
+                            <OptionHome title={"Thống kê khách hàng"} handleOption={openStatistical} icon="bar-chart"/>
                         </View>
                     </View>
                     <View style={styles.bodyItem}>

@@ -13,18 +13,22 @@ const OptionHome = ({ title, handleOption, icon }) => {
 const styles = StyleSheet.create({
     ctn: {
         backgroundColor: "#81d0e8",
-        height: 100,
+        minHeight: 100,
         width: 150,
         borderRadius: 10,
         alignItems: "center",
         justifyContent: "center",
         marginBottom: 24,
+        paddingHorizontal: 24,
+        paddingVertical: 16,
+    
     },
     text: {
         marginTop: 8,
         fontSize: 20,
         fontWeight: "500",
         color: "#fff",
+        textAlign: "center",
     }
 })
 export default OptionHome
