@@ -29,6 +29,9 @@ import FloorsScreen from "./view/floor_Screen";
 import SettingScreenAdmin from "./view/setting_Screen/admin";
 import SettingScreenUser from "./view/setting_Screen/user";
 
+// infor
+import InforScreen from "./view/Info_Screen";
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -132,6 +135,12 @@ export default function App() {
           <Stack.Screen
             name="SettingScreenUser"
             component={SettingScreenUser}
+            options={{ title: "", headerShown: false }}
+          />
+          {/* info screen */}
+          <Stack.Screen
+            name="InforScreen"
+            component={InforScreen}
             options={{ title: "", headerShown: false }}
           />
         </Stack.Navigator>

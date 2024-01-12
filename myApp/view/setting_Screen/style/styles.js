@@ -23,6 +23,41 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         borderTopWidth: 1,
         borderColor: "#404242",
+    },
+    setttingBody: {
+        flex: 1,
+        paddingHorizontal: 24,
+        width: "100%",
+    },
+    settingInfo: {
+        flexDirection: "row",
+        alignItems: "center",
+        borderRadius: 10,
+        backgroundColor: "#086788", 
+        width: "100%",
+        height: 50,
+        justifyContent:"center",
+        marginBottom: 24,
+    },
+    settingInfoText: {
+        fontSize: 25,
+        color: "#fff",
+        marginLeft: 5,
+    },
+    settingLanguage: {
+        flexDirection: "row",
+        alignItems: "center",
+        borderRadius: 10,
+        backgroundColor: "#086788", 
+        width: "100%",
+        height: 50,
+        justifyContent:"center",
+        
+    },
+    settingLanguageText: {
+        fontSize: 25,
+        color: "#fff",
+        marginLeft: 5,
     }
 })
 
