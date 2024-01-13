@@ -38,7 +38,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="TableScreen">
+        <Stack.Navigator initialRouteName="LoginScreen">
           {/* login and signUp */}
           <Stack.Screen
             name="LoginScreen"
